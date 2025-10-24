@@ -67,6 +67,57 @@ body {
   font-weight: 500;
 }
 
+/* Contact Section */
+.contact-section {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to bottom, #0b0e16, #121625);
+  color: #e0e0e0;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  color: #00bfa6;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  color: #c0c0c0;
+  margin-bottom: 40px;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px 25px;
+  border-radius: 12px;
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.contact-card i {
+  font-size: 1.5rem;
+  color: #00bfa6;
+}
+
+.contact-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 191, 166, 0.5);
+}
+
+
 /* Hero Section */
 .hero {
   height: 100vh;
