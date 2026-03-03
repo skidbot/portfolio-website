@@ -102,6 +102,83 @@ body {
   box-shadow: 0 0 10px rgba(0, 191, 166, 0.3);
 }
 
+/* The Grid Container */
+.project-grid {
+  display: grid;
+  /* Creates a responsive grid: min 320px wide, max 3 columns */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding-bottom: 4rem;
+}
+
+/* Individual Project Card */
+.project-card {
+  background: rgba(30, 41, 59, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 1.2rem;
+  overflow: hidden; /* Clips image corners to match card */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent);
+  background: rgba(30, 41, 59, 0.7);
+}
+
+/* Card Image */
+.project-img {
+  width: 100%;
+  height: 180px; /* Uniform height for all thumbnails */
+  object-fit: cover; /* Crops image to fit without stretching */
+  cursor: pointer;
+}
+
+/* Card Text Content */
+.project-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Ensures buttons align at the bottom */
+}
+
+.project-content h2 {
+  font-size: 1.2rem;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.project-content p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+/* Updated Tags Styling */
+.tags {
+  margin-bottom: 1.5rem;
+}
+
+.tags span {
+  background: rgba(20, 184, 166, 0.1);
+  color: var(--accent);
+  padding: 0.2rem 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  margin-right: 5px;
+  border: 1px solid rgba(20, 184, 166, 0.2);
+}
+
+/* Adjust the existing button for the card */
+.project-content .btn {
+  align-self: flex-start;
+  font-size: 0.85rem;
+  padding: 0.5rem 1rem;
+}
+
 
 /* Hero Section */
 .hero {
