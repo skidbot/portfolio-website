@@ -162,92 +162,48 @@ body {
 
 /* Generic Page Layout */
 .page {
-  padding-top: 8rem; /* Enough space for the fixed navbar */
-  max-width: 1200px; /* Wider for the 3-column grid */
+  padding-top: 6rem;
+  max-width: 1000px;
   margin: 0 auto;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
 
-/* The Grid Container */
-.project-grid {
-  display: grid;
-  /* Adjusts from 1 to 3 columns automatically */
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 2.5rem;
-  padding-bottom: 4rem;
-}
-
-/* Individual Project Card */
-.project-card {
-  background: rgba(30, 41, 59, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 1rem;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-8px);
-  border-color: var(--accent);
-  background: rgba(30, 41, 59, 0.6);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-}
-
-/* Card Image */
-.project-img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover; /* Ensures images aren't squashed */
-  cursor: pointer;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-/* Card Text Content */
-.project-content {
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
-.project-content h2 {
-  font-size: 1.3rem;
-  color: var(--accent);
-  margin-bottom: 0.75rem;
-}
-
-.project-content p {
-  font-size: 0.95rem;
-  color: var(--muted);
-  margin-bottom: 1.5rem;
-  flex-grow: 1; /* Pushes button to the bottom */
-}
-
-/* Tags Styling */
-.tags {
+/* Section Styling */
+.section {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.section-img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+}
+
+.section-content h2 {
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.section-content p {
+  margin-bottom: 0.75rem;
+  color: var(--muted);
 }
 
 .tags span {
-  background: rgba(20, 184, 166, 0.1);
+  display: inline-block;
+  background: rgba(20, 184, 166, 0.15);
   color: var(--accent);
-  padding: 0.3rem 0.6rem;
-  font-size: 0.75rem;
-  border-radius: 6px;
-  border: 1px solid rgba(20, 184, 166, 0.2);
-}
-
-/* Card Button */
-.project-content .btn {
-  align-self: flex-start;
+  padding: 0.25rem 0.6rem;
+  margin-right: 0.4rem;
+  margin-bottom: 0.4rem;
+  border-radius: 0.4rem;
   font-size: 0.85rem;
-  padding: 0.6rem 1.2rem;
 }
 
 /* About Page Image */
