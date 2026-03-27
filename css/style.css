@@ -142,6 +142,8 @@ img {
 
 .hero-home {
   min-height: calc(100vh - 2rem);
+  align-items: flex-start;
+  padding-top: 6.25rem;
 }
 
 .hero-home::after {
@@ -163,7 +165,7 @@ img {
   border: 1px solid rgba(148, 163, 184, 0.2);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
-  margin-top: -1.5rem;
+  margin-top: 0;
 }
 
 .hero-content h1 {
@@ -434,6 +436,10 @@ img {
 
   .hero-home::after {
     height: 120px;
+  }
+
+  .hero-home {
+    padding-top: 6.5rem;
   }
 }
 
