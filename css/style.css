@@ -212,12 +212,12 @@ img {
 .btn {
   color: #08101d;
   background: linear-gradient(135deg, var(--accent), #7dd3fc);
-  box-shadow: 0 18px 30px var(--accent-shadow);
+  box-shadow: none;
 }
 
 .btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 22px 38px rgba(34, 211, 238, 0.25);
+  box-shadow: none;
 }
 
 .contact-btn {
@@ -233,7 +233,7 @@ img {
 .contact-btn:hover {
   transform: scale(1.05);
   background: rgba(94, 234, 212, 0.12);
-  box-shadow: 0 16px 30px rgba(8, 16, 29, 0.28);
+  box-shadow: none;
 }
 
 .page {
