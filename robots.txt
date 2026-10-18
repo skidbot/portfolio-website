@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sampeller.com/sitemap.xml
