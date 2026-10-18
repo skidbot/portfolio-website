@@ -37,11 +37,3 @@ or any other third party.
 Every page has a `Content-Security-Policy` meta tag that only allows files from this
 domain. If you add an outside script or embed later (analytics, a badge widget, a video),
 add its domain to the matching directive in each page's `<head>`, or the browser will block it.
-
-## Preview locally
-
-```sh
-python3 -m http.server 8000
-```
-
-Then open http://localhost:8000.
