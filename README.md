@@ -14,18 +14,6 @@ and GitHub Pages publishes the change.
 | `about.html` | Background, certifications and training, experience, education, tools |
 | `404.html` | Shown by GitHub Pages for any missing page |
 
-## Common edits
-
-- **Add a Credly verification link to a certification.** In `index.html` and `about.html`,
-  search for `Credly`. Each certification has a commented-out "Verify on Credly" link; paste
-  your badge URL into it and remove the `<!--` and `-->` around it.
-- **Add a project.** Copy one `<article class="project">` block in `school.html`, then change
-  the screenshot, text, and report link. To feature it on the home page, copy an
-  `<article class="work">` block in `index.html`.
-- **Change colors.** All colors are tokens at the top of `css/style.css` (light theme first,
-  then dark).
-- **Replace the resume.** Overwrite `assets/resume.pdf`; every "Resume" button points to it.
-
 ## Fonts
 
 Atkinson Hyperlegible Next and Atkinson Hyperlegible Mono are self-hosted in `fonts/`
